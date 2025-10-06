@@ -43,6 +43,20 @@ Once your environment is running, you can:
 
 ## 🐛 Troubleshooting
 
+### Widget Not Appearing
+
+If the Droppable widget doesn't show up in your deployed app:
+
+**Cause**: The widget script is missing from `index.html`.
+
+**Solution**: Make sure this script tag is included in your `index.html` before the closing `</body>` tag:
+
+```html
+<script src="https://widget.droppable.ai/droppable-widget.min.js"></script>
+```
+
+The widget should appear automatically once the script is loaded.
+
 ### 503 Service Unavailable Error
 
 If you see a 503 error when accessing your deployed environment:
